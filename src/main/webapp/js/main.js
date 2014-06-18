@@ -12,7 +12,8 @@ requirejs.config({
     }
 });
 
-require(["jquery", "underscore", "bootstrap", "backbone", "application"], 
-		function ($, _, bootstrap, backbone, application) {
-	
+require(["jquery", "underscore", "bootstrap", "backbone", "Application"], 
+		function ($, _, bootstrap, backbone, Application) {
+	var app = new Application();
+	app.start();
 });
