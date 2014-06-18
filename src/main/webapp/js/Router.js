@@ -1,13 +1,20 @@
-define([ "jquery", "underscore", "backbone", "views" ], function($, _,
-		Backbone, views) {
+define([ "jquery", "underscore", "backbone", "views" ], 
+		function($, _, Backbone, views) {
 	return Backbone.Router.extend({
 		routes : {
 			"" : function() {
-				alert("home");
+				
+			},
+			"accounts": function() {
+				this.application.show(views.accounts);
 			},
 			"customers" : function() {
-				alert("customers");
+				
 			}
+		},
+		
+		initialize: function(options) {
+			this.application = options.application;
 		}
 	});
 });

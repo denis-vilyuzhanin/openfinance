@@ -1,8 +1,6 @@
-define(["view/home", "view/customers", "view/accounts"],function(){
-	var i = 0;
+define(["view/home", "view/customers", "view/Accounts"],
+		function(Home, Customers, Accounts){
 	return {
-		home: arguments[i++],
-		customers: arguments[i++],
-		accounts: arguments[i++]
+		accounts: new Accounts()
 	};
 });
