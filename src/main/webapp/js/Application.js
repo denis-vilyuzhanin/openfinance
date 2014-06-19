@@ -1,19 +1,24 @@
+define([ "jquery", "underscore", "backbone", "controller/Home",
+		"controller/Accounts" ], 
+		function($, _, Backbone, Home, Accounts) {
 
-define(["jquery", "underscore", "backbone", "Router"], 
-		function($, _, Backbone, Router){
-	
 	return Backbone.Model.extend({
-		
-		initialize: function() {
-			this.router = new Router({
-				application: this
-			});
+
+		initialize : function() {
 			this.body = $("#body");
+			var options = {
+				application : this
+			};
+			this.controllers = {
+				home : new Home(options),
+				accounts : new Accounts(options)
+			};
+
 		},
-		start: function() {
+		start : function() {
 			Backbone.history.start();
 		},
-		show: function(view) {
+		show : function(view) {
 			view.render();
 			this.body.empty();
 			this.body.append(view.$el);

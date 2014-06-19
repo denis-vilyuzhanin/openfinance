@@ -1,4 +1,5 @@
 requirejs.config({
+	urlArgs: "bust=" + (new Date()).getMinutes(), 
 	paths: {
 		"jquery": "lib/jquery-2.1.1",
 		"bootstrap": "lib/bootstrap-3.1.1",
