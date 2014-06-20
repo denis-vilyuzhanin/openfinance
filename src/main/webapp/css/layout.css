@@ -27,6 +27,12 @@ body>.container {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
+#body {
+	margin-top: 20px;
+	width: 800px;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 
