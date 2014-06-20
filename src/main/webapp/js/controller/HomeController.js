@@ -3,7 +3,7 @@ define(["underscore", "backbone"],
 	return Backbone.Router.extend({
 		
 		routes: {
-			"home": function() {
+			"": function() {
 				alert("Home");
 			}
 		},

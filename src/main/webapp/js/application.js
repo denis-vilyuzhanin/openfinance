@@ -1,21 +1,20 @@
-define([ "jquery", "underscore", "backbone", "view/Application",
-		"controller/Home", "controller/Accounts" ], function($, _, Backbone,
-		ApplicationView, HomeController, AccountsController) {
-	
+define([ "jquery", "underscore", "backbone", "controllers", "view/ApplicationView"], 
+		function($, _, Backbone, controllers, ApplicationView) {
+
 	return {
 		start : function() {
 			this.applicationView = new ApplicationView();
 			var options = {
-				application: this
+				application : this
 			};
 			this.controllers = {
-				home: new HomeController(options),
-				accounts: new AccountsController(options)
+				home : new controllers.HomeController(options),
+				accounts : new controllers.AccountsController(options)
 			};
 			Backbone.history.start();
 		},
-		
-		getView: function() {
+
+		getView : function() {
 			return this.applicationView;
 		}
 	};

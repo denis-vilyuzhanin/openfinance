@@ -1,8 +1,9 @@
 
-define(["conroller/Home", "conroller/Accounts"], 
-		function(Home, Accounts){
+define(["controller/HomeController", "controller/AccountsController"], 
+		function(){
+	var i = 0;
 	return {
-		home: new Home(),
-		accounts: new Accounts()
+		HomeController: arguments[i++],
+		AccountsController: arguments[i++]
 	};
 });

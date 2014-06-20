@@ -1,4 +1,4 @@
-define(["underscore", "backbone", "view/Accounts", "model/Accounts"], 
+define(["underscore", "backbone", "view/AccountsView", "model/AccountsModel"], 
 		function(_, Backbone, View, Model){
 	return Backbone.Router.extend({
 		
