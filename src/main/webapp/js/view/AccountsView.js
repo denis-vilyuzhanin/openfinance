@@ -12,7 +12,7 @@ define(["jquery", "underscore", "backbone"],
 			this.$el = this.$template.clone();
 			this.$el.removeClass("template");
 			
-			var $itemTemplate = this.$el.find(".template .list-group-item");
+			var $itemTemplate = this.$el.find(".template.list-group-item");
 			for(var i = 0; i < 10; i++) {
 				var $item = $itemTemplate.clone();
 				$item.removeClass("template");
