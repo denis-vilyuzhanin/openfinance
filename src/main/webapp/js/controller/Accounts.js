@@ -4,7 +4,7 @@ define(["underscore", "backbone", "view/Accounts", "model/Accounts"],
 		
 		routes: {
 			"accounts": function() {
-				this.application.show(this.view);
+				this.application.getView().show(this.view);
 			}
 		},
 		
