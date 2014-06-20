@@ -18,6 +18,7 @@
 
 <link href="css/lib/bootstrap-3.1.1.css" rel="stylesheet">
 <link href="css/lib/bootstrap-theme-3.1.1.css" rel="stylesheet">
+<link href="css/template.css" rel="stylesheet">
 <link href="css/layout.css" rel="stylesheet">
 <link href="css/theme.css" rel="stylesheet">
 <link href="css/text.css" rel="stylesheet">
@@ -28,6 +29,10 @@
 	<%@include file="view/navigation.jspf" %>
 	<%@include file="view/body.jspf" %>
 	<%@include file="view/footer.jspf" %>
+	
+	<div class="templates">
+		<%@include file="view/accountsView.jspf" %>
+	</div>
 		
 	<script type="text/javascript" src="js/lib/requirejs-2.1.14.js" data-main="js/main.js"></script>
 		

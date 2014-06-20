@@ -10,7 +10,7 @@ define(["underscore", "backbone"],
 		
 		initialize: function(options) {
 			this.application = options.application;
-		
+			
 		}
 	});
 });
