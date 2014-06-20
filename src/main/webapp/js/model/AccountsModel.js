@@ -1,5 +1,5 @@
-define(["underscore", "backbone"], function(_, Backbone){
-	return Backbone.Model.extend({
-		
+define(["underscore", "backbone", "model/AccountShortInfoModel"], function(_, Backbone, AccountShortInfoModel){
+	return Backbone.Collection.extend({
+		url: "mock/api/accounts.jsp"
 	});
 });

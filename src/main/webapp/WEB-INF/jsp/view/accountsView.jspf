@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <ul id="accountsView_template" class="template list-group">
 	<li class="template list-group-item"><span class="badge">14</span> 
-		<span class="accountNumber">31254307218611</span>
-		<span class="accountCustomer">Міністерство оборони України</span>
-		<span class="customerCode">00034022</span>
+		<span class="accountNumber">?</span>
+		<span class="accountCustomer">?</span>
+		<span class="codeEDPNOU">?</span>
 	</li>
 </ul>
