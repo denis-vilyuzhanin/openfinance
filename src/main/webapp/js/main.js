@@ -13,10 +13,13 @@ requirejs.config({
 	shim : {
 		"bootstrap" : {
 			deps : [ "jquery" ]
+		},
+		"jquery.csv" : {
+			deps : ["jquery"]
 		}
 	}
 });
 
-require([ "jquery", "underscore", "bootstrap", "backbone", "application" ], function($, _, bootstrap, backbone, application) {
+require(["application"], function(application) {
 	application.start();
 });
