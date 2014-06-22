@@ -24,7 +24,7 @@ define(["jquery", "underscore", "backbone"],
 				var $item = _this.$itemTemplate.clone();
 				$item.find(".accountNumber").text(accountShortInfo.get("accountNumber"));
 				$item.find(".accountCustomer").text(accountShortInfo.get("accountCustomer"));
-				$item.find(".codeEDPNOU").text(accountShortInfo.get("codeEDPNOU"));
+				$item.find(".customerEDPNOU").text(accountShortInfo.get("customerEDPNOU"));
 				_this.$el.append($item);
 				$item.removeClass("template");
 			});

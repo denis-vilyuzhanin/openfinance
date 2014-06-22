@@ -9,4 +9,13 @@
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	
+	<servlet>
+		<servlet-name>MockResources</servlet-name>
+		<servlet-class>in.ua.openfinance.ResourceServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MockResources</servlet-name>
+		<url-pattern>/mock/*</url-pattern>
+	</servlet-mapping>
 </web-app>
