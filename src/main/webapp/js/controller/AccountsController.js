@@ -4,7 +4,12 @@ define(["underscore", "backbone", "view/AccountsView", "model/AccountsModel"],
 		
 		routes: {
 			"accounts": function() {
-				this.model.fetch();
+				this.model.fetch({
+					dataType: "text",
+					error: function(resp) {
+						alert("Can't load accounts data");
+					}
+				});
 				this.application.getView().show(this.view);
 			}
 		},

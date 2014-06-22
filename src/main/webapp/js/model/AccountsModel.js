@@ -4,8 +4,10 @@ define(["underscore", "backbone", "jquery.csv", "model/AccountShortInfoModel"],
 		url: "mock/api/accounts.csv",
 		
 		parse: function(csv) {
-			var data = $.csv.toObjects(csv);
-			alert(data);
+			return $.csv.toObjects(csv, {
+				separator: ";",
+				delimiter: '"'
+			});
 		}
 	});
 });
