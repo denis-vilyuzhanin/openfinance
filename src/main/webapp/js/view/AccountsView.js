@@ -25,6 +25,9 @@ define(["jquery", "underscore", "backbone"],
 				$item.find(".accountNumber").text(accountShortInfo.get("accountNumber"));
 				$item.find(".accountCustomer").text(accountShortInfo.get("accountCustomer"));
 				$item.find(".customerEDPNOU").text(accountShortInfo.get("customerEDPNOU"));
+				$item.find(".bank").text(accountShortInfo.get("bank"));
+				$item.find(".bankCode").text(accountShortInfo.get("bankCode"));
+				$item.find(".description").text(accountShortInfo.get("description"));
 				_this.$el.append($item);
 				$item.removeClass("template");
 			});
