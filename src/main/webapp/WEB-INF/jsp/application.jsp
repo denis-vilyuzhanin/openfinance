@@ -31,6 +31,7 @@
 	
 	<div class="templates">
 		<%@include file="view/accountsView.jspf" %>
+		<%@include file="view/accountView.jspf" %>
 	</div>
 		
 	<script type="text/javascript" src="js/lib/requirejs-2.1.14.js" data-main="js/main.js"></script>

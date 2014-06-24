@@ -1,0 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<section id="accountView_template" class="accountView">
+	<h1 class="accountNumber"></h1>
+</section>

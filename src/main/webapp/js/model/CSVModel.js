@@ -7,6 +7,12 @@ define(["underscore", "backbone", "jquery.csv"],
 				separator: ";",
 				delimiter: '"'
 			});
+		},
+		
+		fetch: function(options) {
+			options = options ? options : {};
+			options.dataType = "text";
+			Backbone.Collection.prototype.fetch.call(this, options);
 		}
 	});
 });

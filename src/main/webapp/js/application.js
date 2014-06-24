@@ -9,7 +9,8 @@ define([ "jquery", "underscore", "backbone", "controllers", "view/ApplicationVie
 			};
 			this.controllers = {
 				home : new controllers.HomeController(options),
-				accounts : new controllers.AccountsController(options)
+				accounts : new controllers.AccountsController(options),
+				account: new controllers.AccountController(options)
 			};
 			Backbone.history.start();
 		},
