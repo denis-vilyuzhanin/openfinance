@@ -1,4 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<section id="accountView_template" class="accountView">
-	<h1 class="accountNumber"></h1>
+<section id="accountView_template" class="accountView template">
+	<h1 class="">
+		<span class="accountNumber">?</span>
+		<span class="accountCustomer">?</span>
+	</h1>
+	<label>ЄДРПО</label>
+	<span class="customerEDPNOU">?</span>
+	
+	<label>Банк</label>
+	<span class="bank">?</span>
+	
+	<label>Код банку</label>
+	<span class="bankCode">?</span>
+	
+	<label>Опис</label>
+	<p class="description">?</p>
+	
+	
 </section>

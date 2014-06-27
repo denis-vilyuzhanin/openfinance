@@ -13,6 +13,7 @@ define(["jquery", "underscore", "backbone"],
 		render: function() {
 			this.$el = this.$template.clone();
 			this.$el.removeClass("template");
+			this.$el.attr('id', 'accountsView');
 			this.renderAccountsList();
 			return this;
 		},
