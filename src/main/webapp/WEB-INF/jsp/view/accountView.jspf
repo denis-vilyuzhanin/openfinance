@@ -1,20 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <section id="accountView_template" class="accountView template">
-	<h1 class="">
-		<span class="accountNumber">?</span>
-		<span class="accountCustomer">?</span>
-	</h1>
-	<label>ЄДРПО</label>
-	<span class="customerEDPNOU">?</span>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="page-header">
+				<h1>
+					<span class="accountNumber">?</span>
+					<small> 
+						<span class="accountCustomer">?</span>
+					</small>
+				</h1>
+			</div>
+			<label>ЄДРПО</label> 
+			<span class="customerEDPNOU">?</span> 
+			<label>Банк</label>
+			<span class="bank">?</span> 
+			<label>Код банку</label> 
+			<span class="bankCode">?</span> <label>Опис</label>
+			<p class="description">?</p>
+		</div>
+	</div>
+
+
 	
-	<label>Банк</label>
-	<span class="bank">?</span>
 	
-	<label>Код банку</label>
-	<span class="bankCode">?</span>
-	
-	<label>Опис</label>
-	<p class="description">?</p>
-	
-	
+
 </section>
