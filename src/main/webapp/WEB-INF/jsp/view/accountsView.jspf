@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <ul id="accountsView_template" class="template list-group">
 	<li class="template list-group-item">
-		<span class="accountNumber">?</span>
+		<a class="accountNumber" href="#">?</a>
 		<span class="accountCustomer">?</span>
 		<span class="customerEDPNOU">?</span>
 		<span class="bank">?</span>

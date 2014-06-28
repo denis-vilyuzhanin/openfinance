@@ -23,7 +23,8 @@ define(["jquery", "underscore", "backbone"],
 			this.$el.empty();
 			this.model.each(function(accountShortInfo) {
 				var $item = _this.$itemTemplate.clone();
-				$item.find(".accountNumber").text(accountShortInfo.get("accountNumber"));
+				var accountNumber = accountShortInfo.get("accountNumber");
+				$item.find(".accountNumber").text(accountNumber).attr('href', "#account/" + accountNumber);
 				$item.find(".accountCustomer").text(accountShortInfo.get("accountCustomer"));
 				$item.find(".customerEDPNOU").text(accountShortInfo.get("customerEDPNOU"));
 				$item.find(".bank").text(accountShortInfo.get("bank"));
