@@ -15,7 +15,6 @@ define(["jquery", "underscore", "backbone", "components"],
 			this._accountInfoPanel = new components.AccountInfoPanel({
 				el: this.$el.find(".accountInfo")
 			});
-			this.renderAccount();
 			return this;
 		},
 		
