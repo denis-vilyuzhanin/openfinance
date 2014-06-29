@@ -4,10 +4,7 @@ define(["underscore", "backbone", "view/AccountView", "model/AccountModel"],
 		
 		routes: {
 			"account/:accountNumber": function(accountNumber) {
-				this.model.set({
-					accountNumber: accountNumber
-				});
-				this.model.fetch();
+				this.model.fetchAccount(accountNumber);
 				this.application.getView().show(this.view);
 			}
 		},

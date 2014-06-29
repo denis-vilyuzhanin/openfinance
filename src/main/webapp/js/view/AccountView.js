@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone"], 
-	   function($, _, Backbone){
+define(["jquery", "underscore", "backbone", "components"], 
+	   function($, _, Backbone, components){
 	
 	return Backbone.View.extend({
 		
@@ -12,17 +12,15 @@ define(["jquery", "underscore", "backbone"],
 			this.$el = this.$template.clone();
 			this.$el.removeClass("template");
 			this.$el.attr('id', 'accountView');
+			this._accountInfoPanel = new components.AccountInfoPanel({
+				el: this.$el.find(".accountInfo")
+			});
 			this.renderAccount();
 			return this;
 		},
 		
 		renderAccount: function() {
-			this.$el.find(".accountNumber").text(this.model.get("accountNumber"));
-			this.$el.find(".accountCustomer").text(this.model.get("accountCustomer"));
-			this.$el.find(".customerEDPNOU").text(this.model.get("customerEDPNOU"));
-			this.$el.find(".bank").text(this.model.get("bank"));
-			this.$el.find(".bankCode").text(this.model.get("bankCode"));
-			this.$el.find(".description").text(this.model.get("description"));
+			this._accountInfoPanel.render(this.model.attributes);
 		}
 	});
 });

@@ -1,6 +1,11 @@
 define(["underscore", "backbone", "model/AccountsModel"], function(_, Backbone, AccountsModel){
 	return Backbone.Model.extend({
 		
+		fetchAccount: function(accountNumber) {
+			this.attributes.accountNumber = accountNumber;
+			this.fetch();
+		},
+		
 		fetch: function() {
 			var _this = this;
 			var accountNumber = this.get("accountNumber");

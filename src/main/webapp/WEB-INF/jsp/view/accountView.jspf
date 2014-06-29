@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <section id="accountView_template" class="accountView template">
 
-	<div class="panel panel-default">
+	<div class="accountInfo panel panel-default">
 		<div class="panel-body">
 			<div class="page-header">
 				<h1>
